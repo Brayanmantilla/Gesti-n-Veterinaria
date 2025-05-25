@@ -32,3 +32,7 @@ El sistema permite:
 - Ver mascotas por dueño: Simula la carga de los datos del dueño (2 segundos)
 
 ![](https://www.clinicaveterinariaejea.com/wp-content/uploads/2020/03/Equipo-Clinica-Veterinaria-Ejea-1-480x300.jpegg)
+
+
+
+9
