@@ -33,6 +33,3 @@ El sistema permite:
 
 ![](https://www.clinicaveterinariaejea.com/wp-content/uploads/2020/03/Equipo-Clinica-Veterinaria-Ejea-1-480x300.jpegg)
 
-
-
-9
