@@ -31,5 +31,5 @@ El sistema permite:
 - Eliminación de mascota: Simula confirmación del usuario en la eliminación de la mascota (2 segundos)
 - Ver mascotas por dueño: Simula la carga de los datos del dueño (2 segundos)
 
-![](https://www.clinicaveterinariaejea.com/wp-content/uploads/2020/03/Equipo-Clinica-Veterinaria-Ejea-1-480x300.jpegg)
+![](https://www.clinicaveterinariaejea.com/wp-content/uploads/2020/03/Equipo-Clinica-Veterinaria-Ejea-1-480x300.jpeg)
 
