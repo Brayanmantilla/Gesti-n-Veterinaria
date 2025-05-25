@@ -97,18 +97,18 @@ function buscarMascotaAsincrona() {
             else reject("Mascota no encontrada");
         }, 1500);
     })
-    .then(mascota => {
-        const dueno = duenos.find(d => d.id === mascota.idDueno);
-        let mensaje = `Datos de la mascota:\n\n`;
-        mensaje += `Nombre: ${mascota.nombre}\n`;
-        mensaje += `Especie: ${mascota.especie}\n`;
-        mensaje += `Edad: ${mascota.edad} años\n`;
-        mensaje += `Peso: ${mascota.peso} kg\n`;
-        mensaje += `Estado: ${mascota.estado}\n`;
-        mensaje += `Dueño: ${dueno ? dueno.nombre : "Desconocido"}\n`;
-        alert(mensaje);
-    })
-    .catch(error => alert(error));
+        .then(mascota => {
+            const dueno = duenos.find(d => d.id === mascota.idDueno);
+            let mensaje = `Datos de la mascota:\n\n`;
+            mensaje += `Nombre: ${mascota.nombre}\n`;
+            mensaje += `Especie: ${mascota.especie}\n`;
+            mensaje += `Edad: ${mascota.edad} años\n`;
+            mensaje += `Peso: ${mascota.peso} kg\n`;
+            mensaje += `Estado: ${mascota.estado}\n`;
+            mensaje += `Dueño: ${dueno ? dueno.nombre : "Desconocido"}\n`;
+            alert(mensaje);
+        })
+        .catch(error => alert(error));
 }
 
 async function actualizarEstadoSaludAsincrono() {
@@ -130,7 +130,7 @@ async function actualizarEstadoSaludAsincrono() {
         return;
     }
 
-    await new Promise(resolve => setTimeout(resolve, 1000)); 
+    await new Promise(resolve => setTimeout(resolve, 1000));
     mascota.estado = nuevoEstado;
     alert("Estado de salud actualizado con éxito (espera simulada)");
 }
@@ -153,8 +153,8 @@ function eliminarMascotaAsincrona() {
             }
         }, 2000);
     })
-    .then(mensaje => alert(mensaje))
-    .catch(error => alert(error));
+        .then(mensaje => alert(mensaje))
+        .catch(error => alert(error));
 }
 
 async function verMascotasPorDuenoAsincrono() {
@@ -170,7 +170,7 @@ async function verMascotasPorDuenoAsincrono() {
         return;
     }
 
-    await new Promise(resolve => setTimeout(resolve, 2000)); 
+    await new Promise(resolve => setTimeout(resolve, 2000));
 
     const lista = mascotas.filter(m => m.idDueno === dueno.id);
     if (lista.length === 0) {
@@ -216,7 +216,7 @@ async function menu() {
                 listarMascotas();
                 break;
             case "4":
-                await buscarMascotaAsincrona(); 
+                await buscarMascotaAsincrona();
                 break;
             case "5":
                 await actualizarEstadoSaludAsincrono();
